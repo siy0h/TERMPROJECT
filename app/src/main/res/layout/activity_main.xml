@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/loginButton"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/capriola"
+        android:onClick="loginEvent"
+        android:text="LOGIN"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.156" />
+
+    <TextView
+        android:id="@+id/signupTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="SIGN UP NOW"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <TextView
+        android:id="@+id/iAm..."
+        android:layout_width="408dp"
+        android:layout_height="17dp"
+        android:fontFamily="@font/capriola"
+        android:gravity="center"
+        android:text="I AM..."
+        app:layout_constraintBottom_toTopOf="@+id/userANDpass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton"
+        app:layout_constraintVertical_bias="0.120000005" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:clipToPadding="true"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/userANDpass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton"
+        app:layout_constraintVertical_bias="0.48000002">
+
+        <CheckBox
+            android:id="@+id/instructorBox"
+            style="@android:style/Widget.Holo.CompoundButton.CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#020202"
+            android:fontFamily="@font/capriola"
+            android:gravity="center"
+            android:onClick="instructorClicked"
+            android:text="An Instructor"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/memberBox"
+            style="@android:style/Widget.Holo.Light.CompoundButton.CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#020202"
+            android:fontFamily="@font/capriola"
+            android:gravity="center"
+            android:onClick="memberClicked"
+            android:text="A Gym Member"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/userANDpass"
+        android:layout_width="375dp"
+        android:layout_height="286dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton"
+        app:layout_constraintVertical_bias="0.873">
+
+        <TextView
+            android:id="@+id/enterSignupUsername"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:fontFamily="@font/capriola"
+            android:text="Enter Your New Username"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:ems="10"
+            android:hint="Enter New Username Here"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/enterSignupPass"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="@font/capriola"
+            android:text="Enter Your New Password"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter New Password Here"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            tools:ignore="LabelFor" />
+
+        <Button
+            android:id="@+id/signUpButton"
+            style="@android:style/Widget.Holo.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#B84C26"
+            android:fontFamily="@font/capriola"
+            android:onClick="signUpEvent"
+            android:text="sign up"
+            android:textAllCaps="true"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

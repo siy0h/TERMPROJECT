@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchInstructor">
+
+    <TextView
+        android:id="@+id/searchInstructor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/capriola"
+        android:text="Welcome to Search Instructor!"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtInstructor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtClass"
+        android:layout_width="372dp"
+        android:layout_height="64dp"
+        android:hint="Enter the Class Title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.288" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtInstructor"
+        android:layout_width="373dp"
+        android:layout_height="62dp"
+        android:hint="Enter the Instructor ID"
+        app:layout_constraintBottom_toTopOf="@+id/txtClass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.724" />
+
+    <Button
+        android:id="@+id/backEdit"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="86dp"
+        android:layout_height="57dp"
+        android:fontFamily="@font/capriola"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="272dp"
+        android:layout_height="147dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtClass"
+        app:layout_constraintVertical_bias="0.252">
+
+        <Button
+            android:id="@+id/searchInst"
+            style="@android:style/Widget.Holo.Button"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:fontFamily="@font/capriola"
+            android:text="Search Instructor" />
+
+        <Button
+            android:id="@+id/searchInst2"
+            style="@android:style/Widget.Holo.Button"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:fontFamily="@font/capriola"
+            android:text="Search Class" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

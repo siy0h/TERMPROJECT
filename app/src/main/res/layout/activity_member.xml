@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MemberActivity">
+
+    <TextView
+        android:id="@+id/memberTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/capriola"
+        android:text="Welcome to Member Homepage!"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.26" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/memberTitle"
+        app:layout_constraintVertical_bias="0.29000002">
+
+        <Button
+            android:id="@+id/addClass"
+            style="@android:style/Widget.Holo.Button"
+            android:layout_width="172dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#B84C26"
+            android:fontFamily="@font/capriola"
+            android:text="Enroll in Class(es)"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/searchClass"
+            style="@android:style/Widget.Holo.Button"
+            android:layout_width="172dp"
+            android:layout_height="60dp"
+            android:fontFamily="@font/capriola"
+            android:text="Search for Class"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/backBTN"
+            style="@android:style/Widget.Holo.Button"
+            android:layout_width="172dp"
+            android:layout_height="69dp"
+            android:fontFamily="@font/capriola"
+            android:text="Go Back to Login"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

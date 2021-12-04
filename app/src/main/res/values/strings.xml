@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Gym Application</string>
+    <string name="fitness">fitness</string>
+    <string name="getStarted">Get Started!</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="back">back</string>
+    <string name="enter_email">Enter Email Address</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="goto_login">Already Have an Account?</string>
+    <string name="username">Enter Username</string>
+    <string name="age">Enter Age</string>
+    <string name="phoneNum">Enter Phone Number</string>
+    <string name="r_instructor">Are you an instructor?</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="delete_user">Delete a User</string>
+    <string name="edit_cla">Edit a Class</string>
+    <string name="add_cla">Add a Class</string>
+    <string name="viewcus">View All Gym Members</string>
+    <string name="viewins">View All Instructions</string>
+    <string name="delecus">Delete a Gym Member</string>
+    <string name="deleins">Delete a Instruction</string>
+    <string name="cusID">Gym Member ID:</string>
+    <string name="insID">Instructor ID:</string>
+    <string name="create_class">Create a Class:</string>
+
+    <string-array name="classType">
+        <item>Yoga</item>
+        <item>Cardio</item>
+        <item>Weight Lifting</item>
+        <item>Zumba</item>
+        <item>Cycling</item>
+        <item>Boxing</item>
+        <item>HIIT</item>
+
+    </string-array>
+    <string-array name="difficultyType">
+        <item>Beginner</item>
+        <item>Intermediate</item>
+        <item>Advanced</item>
+    </string-array>
+
+    <string-array name="dayOfWeek">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+    <string-array name="time">
+        <item>8:00-9:00</item>
+        <item>9:00-10:00</item>
+        <item>10:00-11:00</item>
+        <item>11:00-12:00</item>
+        <item>12:00-13:00</item>
+        <item>13:00-14:00</item>
+        <item>14:00-15:00</item>
+        <item>15:00-16:00</item>
+        <item>16:00-17:00</item>
+        <item>17:00-18:00</item>
+    </string-array>
+</resources>
